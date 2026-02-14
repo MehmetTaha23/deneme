@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARTIST.BLOG | Reflections on the Digital Void</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0da6f2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .abstract-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(13, 166, 242, 0.15) 0%, rgba(16, 28, 34, 0) 70%);
+        }
+        .neon-line {
+            box-shadow: 0 0 15px rgba(13, 166, 242, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<!-- Background Decorative Elements -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] abstract-gradient rounded-full"></div>
+<div class="absolute bottom-[-5%] right-[-5%] w-[30%] h-[30%] abstract-gradient rounded-full opacity-50"></div>
+</div>
+<div class="relative z-10 flex min-h-screen flex-col">
+<!-- Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">deployed_code</span>
+</div>
+<h2 class="text-xl font-bold tracking-tighter uppercase">Artist.Blog</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Articles</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-white/70 hover:text-white transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hidden sm:flex items-center justify-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary border border-primary/20 hover:bg-primary/20 transition-all">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative flex flex-col items-center justify-center px-6 py-24 text-center md:py-40">
+<div class="max-w-4xl">
+<div class="mb-6 flex justify-center">
+<!-- Abstract Minimalist Graphic -->
+<div class="relative h-24 w-24">
+<div class="absolute inset-0 border-[1px] border-primary/40 rounded-full animate-pulse"></div>
+<div class="absolute inset-4 border-[1px] border-primary/60 rotate-45"></div>
+<div class="absolute inset-8 bg-primary rounded-full neon-line"></div>
+</div>
+</div>
+<h1 class="text-5xl font-extralight leading-tight tracking-tight text-white md:text-8xl">
+                        Reflections on the <br/>
+<span class="italic font-normal text-primary">Digital Void</span>
+</h1>
+<p class="mx-auto mt-8 max-w-2xl text-lg text-slate-400 md:text-xl font-light leading-relaxed">
+                        Exploring the intersection of generative algorithms and the modern canvas through a minimalist lens. A journey into silence, code, and color.
+                    </p>
+<div class="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+<button class="group flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white hover:bg-primary/90 transition-all">
+<span>Explore Articles</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="rounded-full border border-white/10 px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white hover:bg-white/5 transition-all">
+                            View Gallery
+                        </button>
+</div>
+</div>
+</section>
+<!-- Featured Grid Section -->
+<section class="mx-auto max-w-7xl px-6 py-20 md:px-12">
+<div class="mb-16 flex items-end justify-between border-b border-white/5 pb-8">
+<div>
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary">Curated Thoughts</span>
+<h2 class="mt-2 text-3xl font-light text-white md:text-4xl">Featured Writings</h2>
+</div>
+<a class="hidden text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-white transition-colors sm:block" href="#">View all articles</a>
+</div>
+<div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+<!-- Post 1 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-slate-800">
+<img alt="The Intersection of Code and Canvas" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Abstract blue 3D waves on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2DlqvGqKvQ4Yo31mwgOWS4P_FhsC09q8K8bmRxDY6vIjUx7ubocEcYimkF4m0-LGil0kuSCdv806Yw0slZ4uOkKMbx1AWRnX9LLfONyoHr-IAh-8hgURM06rYdSdP3cVuiTzYjMZwVRA9uckFxIvVv2cYm2IyUvvQhwOb0LTltg22kDYOHawViOf1q64Q6ZdkC0TpECs8lMrrXz-apXxTDdgpXCVe-uYSqPSetwznj4gCE6mqDq9LGPx61yhlf8EAJHx88j2TjFg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary/20 backdrop-blur-md border border-primary/30 text-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">Digital Art</span>
+</div>
+</div>
+<div class="mt-6">
+<div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-3">
+<span>Oct 12, 2023</span>
+<span class="h-1 w-1 rounded-full bg-primary"></span>
+<span>5 min read</span>
+</div>
+<h3 class="text-2xl font-normal leading-snug text-white group-hover:text-primary transition-colors">
+                                The Intersection of Code and Canvas
+                            </h3>
+<p class="mt-4 text-slate-400 font-light leading-relaxed line-clamp-2">
+                                Exploring how generative algorithms are redefining the modern art gallery and challenging our perception of the creator.
+                            </p>
+</div>
+</article>
+<!-- Post 2 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-slate-800">
+<img alt="Minimalism in the Age of Noise" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Minimalist glowing blue geometric lines in space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK_XVhyypbheJ4ker1BXvTC00B8_pWWBga3_iXevDf857Muj2rz1cD1jLWYAvJO7e3CmIqpcfQFgt3veJ9G3P8IBJelQAES75KUteAxvaPSMO6YYw8w4FrPr7bfKhoHPgw0FzFYfzixbj5MbHw-YZyvcqP3ZWc4VR6Po5JNwaK-3mR-VrJSY2V-S1MR_YNB7X2qPZx3PWn6r5_TTi0lbYfPuMWhFgKsmTmijkvFpJecC5X9jzQHVkf15Yim9leI_aQREIw9euwDm0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary/20 backdrop-blur-md border border-primary/30 text-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">Philosophy</span>
+</div>
+</div>
+<div class="mt-6">
+<div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-3">
+<span>Oct 08, 2023</span>
+<span class="h-1 w-1 rounded-full bg-primary"></span>
+<span>4 min read</span>
+</div>
+<h3 class="text-2xl font-normal leading-snug text-white group-hover:text-primary transition-colors">
+                                Minimalism in the Age of Noise
+                            </h3>
+<p class="mt-4 text-slate-400 font-light leading-relaxed line-clamp-2">
+                                How stripping away the excess leads to deeper creative clarity and a more intentional digital existence.
+                            </p>
+</div>
+</article>
+<!-- Post 3 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-slate-800">
+<img alt="The Future of Digital Curation" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Abstract vibrant neon blue gradients and curves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9vVXZ4-QTVWM5AWtP2m4WQpVVrmVfRE70D9bdINafoGLE5PuNuJpekEvpz6AB23RbK9ULKwSVKUKiV4MROwEE8vb9ymU6z5og8HIjfkhMI_OInq8jBIW3kB7z5lOXLe-xtHO_5-cKVmu9bHJi4DDOoRzsNxsQV8PyITNOGi308Tbws3tFcRPDQgSlXOgqm1eHvuwJ2TlYBRKnKr627Y5pVpfndNVaAlWZMCRVcJ7ECsOwgvhaltBo8_xDO5pJsgQTTp9LzPL739g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary/20 backdrop-blur-md border border-primary/30 text-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">Future</span>
+</div>
+</div>
+<div class="mt-6">
+<div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-3">
+<span>Sep 24, 2023</span>
+<span class="h-1 w-1 rounded-full bg-primary"></span>
+<span>7 min read</span>
+</div>
+<h3 class="text-2xl font-normal leading-snug text-white group-hover:text-primary transition-colors">
+                                The Future of Digital Curation
+                            </h3>
+<p class="mt-4 text-slate-400 font-light leading-relaxed line-clamp-2">
+                                A deep dive into how we consume and archive digital experiences in an increasingly ephemeral online landscape.
+                            </p>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="mx-auto max-w-4xl px-6 py-32 text-center">
+<div class="rounded-2xl bg-white/5 border border-white/10 p-12 backdrop-blur-sm">
+<span class="text-xs font-bold uppercase tracking-[0.4em] text-primary">Monthly Insights</span>
+<h2 class="mt-6 text-4xl font-light text-white">Join the Newsletter</h2>
+<p class="mt-4 text-slate-400 font-light">Receive curated insights on art, technology, and design directly in your inbox.</p>
+<form class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-stretch sm:justify-center">
+<input class="min-w-[300px] rounded-lg border-none bg-background-dark/50 px-6 py-4 text-sm text-white placeholder:text-slate-600 focus:ring-1 focus:ring-primary/50 transition-all" placeholder="Your email address" type="email"/>
+<button class="rounded-lg bg-primary px-8 py-4 text-xs font-bold uppercase tracking-widest text-white hover:bg-primary/90 transition-all" type="submit">
+                            Subscribe
+                        </button>
+</form>
+<p class="mt-6 text-[10px] uppercase tracking-widest text-slate-600">No spam. Just inspiration. Unsubscribe anytime.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/5 bg-background-dark py-12">
+<div class="mx-auto max-w-7xl px-6 md:px-12">
+<div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+<div class="flex items-center gap-3">
+<div class="text-primary/50">
+<span class="material-symbols-outlined text-2xl">deployed_code</span>
+</div>
+<h2 class="text-lg font-bold tracking-tighter uppercase text-slate-500">Artist.Blog</h2>
+</div>
+<div class="flex gap-8 text-slate-500">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">brand_awareness</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div class="mt-12 flex flex-col items-center justify-between border-t border-white/5 pt-8 text-[10px] uppercase tracking-[0.2em] text-slate-600 md:flex-row">
+<p>© 2023 Artist.Blog. All rights reserved.</p>
+<div class="mt-4 flex gap-6 md:mt-0">
+<a class="hover:text-slate-400" href="#">Privacy Policy</a>
+<a class="hover:text-slate-400" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
